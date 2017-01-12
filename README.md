@@ -7,7 +7,15 @@ Zendesk Apps Tools (ZAT) is the only tool needed for developing Zendesk Apps. It
 This repo is owned and maintained by the Zendesk Apps team. You can reach us on vegemite@zendesk.com. We are located in Melbourne!
 
 ## Getting Started To **Use** ZAT
-If you want to **use** this tool, all you need to do is `gem install zendesk_apps_tools` and periodically run `gem update zendesk_apps_tools` because we will keep updating this tool.
+If you want to **use** this tool, all you need to do is install Ruby and run these commands:
+```sh
+$ gem install rake #=> workaround a problem in a dependency
+$ gem install zendesk_apps_tools
+```
+
+and periodically run `gem update zendesk_apps_tools` because we will keep updating this tool.
+
+**Note** You must be able to install Ruby programs with native extensions. The exact steps for this depend on your operating system and how you installed Ruby. If you're having trouble using or installing this tool, please [contact us](https://support.zendesk.com/). If you are using the default Ruby package on a Ubuntu system, you'll need to `apt-get install ruby-dev`.
 
 ## Getting Started To **Develop** ZAT
 When you want to help **develop** this tool, you will need to clone this repo and run `bundle install` to get it going.
